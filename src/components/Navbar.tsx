@@ -1,38 +1,32 @@
+import './style.css'
+
 export default function Navbar() {
+
+  const url = require('../assets/Logo_my_portifolio.png');
+
   return (
-  <html lang="pt-br">
-  <head>
-    <meta charSet="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Navbar</title>
-  </head>
-  <header>
-      <nav className="navbar navbar-expand-lg bg-slate-300">
-      <div className="container-fluid">
-        <a className="navbar-brand" href='/'>Home</a>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        </button>
-        <div className="collapse navbar-collapse flex justify-end" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <a className="nav-link" aria-current="page" href='/personal-projects'>
-            Personal projects</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" aria-current="page" href='/formation'>Formation</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" aria-current="page" href='/contact'>Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <body>
-    
-  </body>
-  </html>
+   <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5  dark:bg-gray-900">
+  <div className="container flex flex-wrap justify-between items-center mx-auto">
+    <a href="/" className="flex items-center">
+        <img src={url} id="logo" className="mr-3 h-6  sm:h-9" alt="Logo" />
+    </a>
+    <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+      <span className="sr-only">Open main menu</span>
+    </button>
+    <div className="hidden w-full pl-24 md:block md:w-auto" id="navbar-default">
+      <ul className="flex flex-col p-4 mr-16 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:text-2xl md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+      <li>
+          <a href="/personal-projects'" className="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Personal projects</a>
+        </li>
+        <li>
+          <a href='/formation' className="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Formation</a>
+        </li>
+        <li>
+          <a href='/contact' className="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
     );
 }
