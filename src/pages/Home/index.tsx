@@ -18,7 +18,6 @@ export default function Home() {
                 <section>
                     <div className="mt-28 text-center">
                         <p className="text-7xl font-sans">Welcome to my portfolio</p><br />
-                        <p className="text-2xl  font-sans">It's not lack of coffee or tequila, it's the code that doesn't compile...</p>
                     </div>
                     <div className='flex justify-center my-16'>
                         <img className='h-[250px] w-[250px]' src='https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortFlat&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=Hoodie&clotheColor=Blue03&eyeType=Happy&eyebrowType=DefaultNatural&mouthType=Smile&skinColor=Light' />
