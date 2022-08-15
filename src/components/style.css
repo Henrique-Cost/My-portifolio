@@ -1,6 +1,6 @@
 #logo {
-    width: 90px;
-    height: 90px;
+    width: 130px;
+    height: 130px;
     border-radius: 10px;
 }
 
@@ -13,7 +13,7 @@
 #menu ul li a::after {
     content: '';
     position: absolute;
-    top: 33px;
+    top: 37px;
     bottom: 1rem;
     left: 10%;
     width: 0;
@@ -33,4 +33,20 @@
     --light-gray-color: #EEEEEE;
     --secondary-color: #2563eb;
     --gap: 3rem;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--white-color);
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--primary-color);
+    transform: rotate(-90deg);
+    border: 0.1rem solid var(--primary-color);
 }

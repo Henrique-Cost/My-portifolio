@@ -1,30 +1,35 @@
+import { ArrowLeft, ArrowRight, ArrowUp, DiscordLogo, Envelope, GithubLogo, GitlabLogo, LinkedinLogo, TelegramLogo } from "phosphor-react";
+
+
 export default function Footer() {
 
+    const url = require('../assets/icon.png');
+
+    function topFunction() {
+        window.scroll({ top: 0, behavior: "smooth" })
+    }
+
     return (
-        <footer className="p-4 bg-white rounded-lg shadow md:px-6 md:py-8 dark:bg-gray-900">
-            <div className="sm:flex sm:items-center sm:justify-between">
-                <a href="https://flowbite.com/" className="flex items-center mb-4 sm:mb-0">
-                    <img src="https://flowbite.com/docs/images/logo.svg" className="mr-3 h-8" alt="Flowbite Logo" />
-                    <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+        <footer className="bg-blue-600">
+            <div className="p-20">
+                <a href="/" className="flex justify-center">
+                    <img src={url} className="mr-3 rounded-full h-24 w-24" alt="Portfolio Logo" />
                 </a>
-                <ul className="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
-                    <li>
-                        <a href="#" className="mr-4 hover:underline md:mr-6 ">About</a>
-                    </li>
-                    <li>
-                        <a href="#" className="mr-4 hover:underline md:mr-6">Privacy Policy</a>
-                    </li>
-                    <li>
-                        <a href="#" className="mr-4 hover:underline md:mr-6 ">Licensing</a>
-                    </li>
-                    <li>
-                        <a href="#" className="hover:underline">Contact</a>
-                    </li>
-                </ul>
+                <p className='flex justify-center pt-14'>
+                    <a href="https://pt-br.facebook.com/" target="_blank" className='mx-3 text-slate-50 hover:text-black ease-in duration-150'><GithubLogo size={50} /></a>
+                    <a href="https://www.instagram.com/" target="_blank" className='mx-3 text-slate-50 hover:text-black ease-in duration-150'><Envelope size={50} /></a>
+                    <a href="https://www.snapchat.com/" target="_blank" className='mx-3 text-slate-50 hover:text-black ease-in duration-150'><DiscordLogo size={50} /></a>
+                    <a href="https://www.pinterest.com/" target="_blank" className='mx-3 text-slate-50 hover:text-black ease-in duration-150'><TelegramLogo size={50} /></a>
+                    <a href="https://twitter.com/" target="_blank" className='mx-3 text-slate-50 hover:text-black ease-in duration-150'><GitlabLogo size={50} /></a>
+                    <a href="https://www.linkedin.com/in/henrique-costa-da-silva-6413b2203/" className='mx-3 text-slate-50 hover:text-black ease-in duration-150' target="_blank"><LinkedinLogo size={50} /></a>
+                </p>
             </div>
-            <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-            <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://flowbite.com/" className="hover:underline">Flowbite™</a>. All Rights Reserved.
-            </span>
+            <div className="pb-6">
+                <hr className="border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+                <span className="block text-lg text-black sm:text-center dark:text-gray-400">© 2022 <a href="/" className="hover:text-white ease-in duration-150 hover:underline">Henrique Costa™</a>. All Rights Reserved.</span>
+            </div>
+            <button onClick={topFunction} title="Go to top"></button>
+            <a className="back-to-top" href="#"><ArrowRight size={32} /></a>
         </footer>
 
     )
