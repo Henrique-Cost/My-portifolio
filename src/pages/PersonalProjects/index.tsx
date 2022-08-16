@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Projects() {
     return (
-        <div className="my-16">
+        <div className="my-16 text-center">
             <span className='flex justify-center'><TreeStructure size={85} /></span>
             <h1 className='text-2xl mt-5 text-blue-600'>Management</h1>
             <p className='text-center mt-16 mx-4'>
