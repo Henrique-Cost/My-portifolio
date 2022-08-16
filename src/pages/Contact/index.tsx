@@ -48,8 +48,8 @@ export default function Contact() {
                         <option>front-end</option>
                     </select>
                 </div>
-                <div className="col-12">
-                    <button className="btn btn-primary bg-blue-600 hover:bg-white hover:text-blue-600" type="submit">Submit form</button>
+                <div className="col-12 flex justify-center">
+                    <button className="btn btn-primary py-3 px-9 bg-blue-600 hover:bg-white hover:text-blue-600" type="submit">Submit form</button>
                 </div>
             </form>
         </div>

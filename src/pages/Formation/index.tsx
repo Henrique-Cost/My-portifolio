@@ -1,6 +1,9 @@
+import { TelegramLogo } from 'phosphor-react';
 import React from 'react';
 
 export default function Formation() {
+  //const url = require('../assets/Logo_my_portifolio.png');
+
 
   return (
     <div>
